@@ -8,6 +8,6 @@
 import Foundation
 
 protocol TypicodeApiServiceProtocol {
-    func getTodos(completion: @escaping ([TypicodeTodo]) -> ())
+    func getTodos(completion: @escaping (NetworkResource<[TypicodeTodo], ErrorMessageString>) -> ())
     func getTypiCodeUser(userId: Int, completion: @escaping (TypiCodeUser) -> ())
 }

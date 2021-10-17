@@ -31,6 +31,7 @@
 		F8B8C3162719D9A6000D7A5F /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C3152719D9A6000D7A5F /* TodoListView.swift */; };
 		F8E183BD271C2C6000D09217 /* TodoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E183BC271C2C6000D09217 /* TodoListRepository.swift */; };
 		F8E183C5271C2CAC00D09217 /* TypiCodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E183C4271C2CAC00D09217 /* TypiCodeRepository.swift */; };
+		F8F5C668271C47A400B2469E /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5C667271C47A400B2469E /* StringUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		F8B8C3152719D9A6000D7A5F /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		F8E183BC271C2C6000D09217 /* TodoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRepository.swift; sourceTree = "<group>"; };
 		F8E183C4271C2CAC00D09217 /* TypiCodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeRepository.swift; sourceTree = "<group>"; };
+		F8F5C667271C47A400B2469E /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				F81403FF271BE82A0072BAD2 /* Resource */,
+				F8F5C667271C47A400B2469E /* StringUtils.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				F814041A271BFD8B0072BAD2 /* TypiCodeTodoItemView.swift in Sources */,
 				F8B8C2CA2719C870000D7A5F /* AppDelegate.swift in Sources */,
 				F8B8C2CC2719C870000D7A5F /* SceneDelegate.swift in Sources */,
+				F8F5C668271C47A400B2469E /* StringUtils.swift in Sources */,
 				F8140415271BF1710072BAD2 /* TypiCodeViewModel.swift in Sources */,
 				F814040B271BEBB20072BAD2 /* TypiCodeService.swift in Sources */,
 				F8B8C2CE2719C870000D7A5F /* ContentView.swift in Sources */,

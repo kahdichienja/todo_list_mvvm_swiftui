@@ -13,8 +13,8 @@ final class TypiCodeViewModel: ObservableObject{
     
     @Published var typicodeUser: TypiCodeUser? = nil
     
-//    @Published var lat: Double = 0.0
-//    @Published var lng: Double = 0.0
+    @State var viewDetailed: Bool = false
+    
     
     @State var region: MKCoordinateRegion
 
@@ -52,8 +52,8 @@ final class TypiCodeViewModel: ObservableObject{
             ),
             latitudinalMeters: 3000,
             longitudinalMeters: 3000)
-//            self.lat =  Double(user.address.geo.lat) ?? 0.0
-//            self.lng =  Double(user.address.geo.lng) ?? 0.0
+            
+            self.viewDetailed = true
         }
     }
     

@@ -17,7 +17,16 @@ final class TypiCodeRepository: TypicodeRepositoryProtocol{
     }
     
     func getAllTodos(completion: @escaping ([TypicodeTodo]) -> ()) {
-        apiService.getTodos(completion: completion)
+        //pass generic up to view model.
+        apiService.getTodos{
+            result in
+            switch result{
+            case .success(let todos):
+                completion(todos)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     func getTypiCodeUserById(userId: Int,completion: @escaping (TypiCodeUser) -> ()){
