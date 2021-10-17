@@ -7,13 +7,8 @@
 
 import Foundation
 
-protocol TypicodeApiServiceProtocol {
-    func getTodos(completion: @escaping([TypicodeTodo]) -> () )
-    func getTypiCodeUser(userId: Int, completion: @escaping (TypiCodeUser) -> ())
-}
-
-
 final class TypicodeApiService: TypicodeApiServiceProtocol{
+    
     func getTodos(completion: @escaping ([TypicodeTodo]) -> ()) {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/todos") else {return}
         

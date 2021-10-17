@@ -8,17 +8,11 @@
 import Foundation
 
 
-protocol TypicodeRepositoryProtocol {
-    func getAllTodos(completion: @escaping ([TypicodeTodo]) -> ())
-    func getTypiCodeUserById(userId: Int,completion: @escaping (TypiCodeUser) -> ())
-}
-
-
 final class TypiCodeRepository: TypicodeRepositoryProtocol{
 
     private let apiService : TypicodeApiServiceProtocol
     
-    init(apiService: TypicodeApiServiceProtocol = TypicodeApiService() ) {
+    init(apiService: TypicodeApiServiceProtocol = TypicodeApiService()) {
         self.apiService = apiService
     }
     

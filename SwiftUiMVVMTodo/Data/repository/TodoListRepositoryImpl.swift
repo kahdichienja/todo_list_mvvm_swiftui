@@ -8,11 +8,6 @@
 import Foundation
 
 
-protocol TodoListRepositoryProtocal {
-    func fetchUser(completion: (TodoListItem) -> Void )
-}
-
-
 
 final class TodoListRepository: TodoListRepositoryProtocal{
     // fetch from API service

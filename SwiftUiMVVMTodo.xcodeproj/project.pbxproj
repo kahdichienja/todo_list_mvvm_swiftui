@@ -10,9 +10,11 @@
 		F8140401271BE84C0072BAD2 /* NetworkResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8140400271BE84C0072BAD2 /* NetworkResource.swift */; };
 		F8140406271BEB7C0072BAD2 /* TypiCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8140405271BEB7C0072BAD2 /* TypiCodeModel.swift */; };
 		F814040B271BEBB20072BAD2 /* TypiCodeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F814040A271BEBB20072BAD2 /* TypiCodeService.swift */; };
-		F8140410271BEF4B0072BAD2 /* TypiCodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F814040F271BEF4B0072BAD2 /* TypiCodeRepository.swift */; };
+		F8140410271BEF4B0072BAD2 /* TypiCodeRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F814040F271BEF4B0072BAD2 /* TypiCodeRepositoryImpl.swift */; };
 		F8140415271BF1710072BAD2 /* TypiCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8140414271BF1710072BAD2 /* TypiCodeViewModel.swift */; };
 		F814041A271BFD8B0072BAD2 /* TypiCodeTodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8140419271BFD8A0072BAD2 /* TypiCodeTodoItemView.swift */; };
+		F840C5F7271C315800AB9A08 /* TodoListApiServiceProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F840C5F6271C315800AB9A08 /* TodoListApiServiceProtocal.swift */; };
+		F840C5FC271C317300AB9A08 /* TypicodeApiServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F840C5FB271C317300AB9A08 /* TypicodeApiServiceProtocol.swift */; };
 		F85BA076271AE92D00EF9FCD /* AddTodoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85BA075271AE92D00EF9FCD /* AddTodoFormView.swift */; };
 		F8B8C2CA2719C870000D7A5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C2C92719C870000D7A5F /* AppDelegate.swift */; };
 		F8B8C2CC2719C870000D7A5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C2CB2719C870000D7A5F /* SceneDelegate.swift */; };
@@ -25,8 +27,10 @@
 		F8B8C3012719D53A000D7A5F /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C3002719D53A000D7A5F /* TodoListViewModel.swift */; };
 		F8B8C3062719D568000D7A5F /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C3052719D568000D7A5F /* TodoListModel.swift */; };
 		F8B8C30C2719D61A000D7A5F /* TodoListApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C30B2719D61A000D7A5F /* TodoListApiService.swift */; };
-		F8B8C3112719D6AC000D7A5F /* TodoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C3102719D6AC000D7A5F /* TodoListRepository.swift */; };
+		F8B8C3112719D6AC000D7A5F /* TodoListRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C3102719D6AC000D7A5F /* TodoListRepositoryImpl.swift */; };
 		F8B8C3162719D9A6000D7A5F /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C3152719D9A6000D7A5F /* TodoListView.swift */; };
+		F8E183BD271C2C6000D09217 /* TodoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E183BC271C2C6000D09217 /* TodoListRepository.swift */; };
+		F8E183C5271C2CAC00D09217 /* TypiCodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E183C4271C2CAC00D09217 /* TypiCodeRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +54,11 @@
 		F8140400271BE84C0072BAD2 /* NetworkResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResource.swift; sourceTree = "<group>"; };
 		F8140405271BEB7C0072BAD2 /* TypiCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeModel.swift; sourceTree = "<group>"; };
 		F814040A271BEBB20072BAD2 /* TypiCodeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeService.swift; sourceTree = "<group>"; };
-		F814040F271BEF4B0072BAD2 /* TypiCodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeRepository.swift; sourceTree = "<group>"; };
+		F814040F271BEF4B0072BAD2 /* TypiCodeRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeRepositoryImpl.swift; sourceTree = "<group>"; };
 		F8140414271BF1710072BAD2 /* TypiCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeViewModel.swift; sourceTree = "<group>"; };
 		F8140419271BFD8A0072BAD2 /* TypiCodeTodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeTodoItemView.swift; sourceTree = "<group>"; };
+		F840C5F6271C315800AB9A08 /* TodoListApiServiceProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApiServiceProtocal.swift; sourceTree = "<group>"; };
+		F840C5FB271C317300AB9A08 /* TypicodeApiServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypicodeApiServiceProtocol.swift; sourceTree = "<group>"; };
 		F85BA075271AE92D00EF9FCD /* AddTodoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoFormView.swift; sourceTree = "<group>"; };
 		F8B8C2C62719C870000D7A5F /* SwiftUiMVVMTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUiMVVMTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B8C2C92719C870000D7A5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,8 +77,10 @@
 		F8B8C3002719D53A000D7A5F /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		F8B8C3052719D568000D7A5F /* TodoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListModel.swift; sourceTree = "<group>"; };
 		F8B8C30B2719D61A000D7A5F /* TodoListApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApiService.swift; sourceTree = "<group>"; };
-		F8B8C3102719D6AC000D7A5F /* TodoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRepository.swift; sourceTree = "<group>"; };
+		F8B8C3102719D6AC000D7A5F /* TodoListRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRepositoryImpl.swift; sourceTree = "<group>"; };
 		F8B8C3152719D9A6000D7A5F /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		F8E183BC271C2C6000D09217 /* TodoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRepository.swift; sourceTree = "<group>"; };
+		F8E183C4271C2CAC00D09217 /* TypiCodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,23 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		F840C5F4271C30F800AB9A08 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F840C5F5271C310900AB9A08 /* Remote */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F840C5F5271C310900AB9A08 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F840C5F6271C315800AB9A08 /* TodoListApiServiceProtocal.swift */,
+				F840C5FB271C317300AB9A08 /* TypicodeApiServiceProtocol.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 		F8B8C2BD2719C870000D7A5F = {
 			isa = PBXGroup;
 			children = (
@@ -131,12 +156,10 @@
 		F8B8C2C82719C870000D7A5F /* SwiftUiMVVMTodo */ = {
 			isa = PBXGroup;
 			children = (
-				F81403FF271BE82A0072BAD2 /* Resource */,
-				F8B8C30A2719D5BB000D7A5F /* Services */,
-				F8B8C2FF2719D50E000D7A5F /* ViewModels */,
-				F8B8C2FE2719D4F7000D7A5F /* views */,
-				F8B8C2FD2719D4ED000D7A5F /* Repository */,
-				F8B8C2FC2719D4D5000D7A5F /* Models */,
+				F8E183B7271C2A2C00D09217 /* Domain */,
+				F8E183B6271C2A0E00D09217 /* Presentation */,
+				F8E183B5271C2A0400D09217 /* Data */,
+				F8E183B4271C29F600D09217 /* Common */,
 				F8B8C2C92719C870000D7A5F /* AppDelegate.swift */,
 				F8B8C2CB2719C870000D7A5F /* SceneDelegate.swift */,
 				F8B8C2CD2719C870000D7A5F /* ContentView.swift */,
@@ -183,15 +206,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F8B8C2FD2719D4ED000D7A5F /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				F8B8C3102719D6AC000D7A5F /* TodoListRepository.swift */,
-				F814040F271BEF4B0072BAD2 /* TypiCodeRepository.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
 		F8B8C2FE2719D4F7000D7A5F /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,10 +228,72 @@
 		F8B8C30A2719D5BB000D7A5F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F8E183B8271C2A5900D09217 /* remote */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F8E183B4271C29F600D09217 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F81403FF271BE82A0072BAD2 /* Resource */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F8E183B5271C2A0400D09217 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F8B8C30A2719D5BB000D7A5F /* Services */,
+				F8E183B9271C2A6300D09217 /* repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F8E183B6271C2A0E00D09217 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F8B8C2FE2719D4F7000D7A5F /* views */,
+				F8B8C2FF2719D50E000D7A5F /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F8E183B7271C2A2C00D09217 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F840C5F4271C30F800AB9A08 /* Services */,
+				F8B8C2FC2719D4D5000D7A5F /* Models */,
+				F8E183BB271C2AA400D09217 /* repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F8E183B8271C2A5900D09217 /* remote */ = {
+			isa = PBXGroup;
+			children = (
 				F8B8C30B2719D61A000D7A5F /* TodoListApiService.swift */,
 				F814040A271BEBB20072BAD2 /* TypiCodeService.swift */,
 			);
-			path = Services;
+			path = remote;
+			sourceTree = "<group>";
+		};
+		F8E183B9271C2A6300D09217 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8B8C3102719D6AC000D7A5F /* TodoListRepositoryImpl.swift */,
+				F814040F271BEF4B0072BAD2 /* TypiCodeRepositoryImpl.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		F8E183BB271C2AA400D09217 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				F8E183BC271C2C6000D09217 /* TodoListRepository.swift */,
+				F8E183C4271C2CAC00D09217 /* TypiCodeRepository.swift */,
+			);
+			path = repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,13 +427,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B8C30C2719D61A000D7A5F /* TodoListApiService.swift in Sources */,
+				F840C5FC271C317300AB9A08 /* TypicodeApiServiceProtocol.swift in Sources */,
 				F8140406271BEB7C0072BAD2 /* TypiCodeModel.swift in Sources */,
-				F8B8C3112719D6AC000D7A5F /* TodoListRepository.swift in Sources */,
+				F840C5F7271C315800AB9A08 /* TodoListApiServiceProtocal.swift in Sources */,
+				F8B8C3112719D6AC000D7A5F /* TodoListRepositoryImpl.swift in Sources */,
 				F85BA076271AE92D00EF9FCD /* AddTodoFormView.swift in Sources */,
 				F8B8C3162719D9A6000D7A5F /* TodoListView.swift in Sources */,
+				F8E183BD271C2C6000D09217 /* TodoListRepository.swift in Sources */,
 				F8B8C3062719D568000D7A5F /* TodoListModel.swift in Sources */,
-				F8140410271BEF4B0072BAD2 /* TypiCodeRepository.swift in Sources */,
+				F8140410271BEF4B0072BAD2 /* TypiCodeRepositoryImpl.swift in Sources */,
 				F8B8C3012719D53A000D7A5F /* TodoListViewModel.swift in Sources */,
+				F8E183C5271C2CAC00D09217 /* TypiCodeRepository.swift in Sources */,
 				F8140401271BE84C0072BAD2 /* NetworkResource.swift in Sources */,
 				F814041A271BFD8B0072BAD2 /* TypiCodeTodoItemView.swift in Sources */,
 				F8B8C2CA2719C870000D7A5F /* AppDelegate.swift in Sources */,
