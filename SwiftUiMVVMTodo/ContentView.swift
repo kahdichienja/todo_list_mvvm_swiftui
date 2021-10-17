@@ -19,9 +19,9 @@ struct ContentView: View {
                             Image(systemName: "square.and.pencil")
                             Text("Todo")
                         }
-                    Image(systemName: "start.fill")
+                    Image(systemName: "star.fill")
                         .tabItem {
-                            Image(systemName: "start.fill")
+                            Image(systemName: "star.fill")
                             Text("Completed")
                         }
                     Text("Profile Screen")

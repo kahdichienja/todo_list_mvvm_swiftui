@@ -18,7 +18,18 @@ final class TypiCodeRepository: TypicodeRepositoryProtocol{
     
     func getAllTodos(completion: @escaping ([TypicodeTodo]) -> ()) {
         //pass generic up to view model.
-        apiService.getTodos{
+//        apiService.getTodos{
+//            result in
+//            switch result{
+//            case .success(let todos):
+//                completion(todos)
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+        guard let url = URL(string: "\(StringUtil.BASE_URL)/todos") else {return}
+        
+        apiService.getData([TypicodeTodo].self, url: url){
             result in
             switch result{
             case .success(let todos):
