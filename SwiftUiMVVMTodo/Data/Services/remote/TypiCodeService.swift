@@ -18,7 +18,6 @@ final class TypicodeApiService: TypicodeApiServiceProtocol{
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                return completion(.failure(.inValidData))
             }
-            
             guard let data = data else {
                return completion(.failure(.inValidData))
             }
