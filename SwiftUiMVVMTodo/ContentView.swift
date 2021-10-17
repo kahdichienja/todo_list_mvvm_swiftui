@@ -16,18 +16,18 @@ struct ContentView: View {
                 TabView {
                     TodoListView()
                         .tabItem {
-                            Image(systemName: "1.square.fill")
+                            Image(systemName: "square.and.pencil")
                             Text("Todo")
                         }
-                    Text("Another Tab")
+                    Image(systemName: "start.fill")
                         .tabItem {
-                            Image(systemName: "2.square.fill")
-                            Text("Second")
+                            Image(systemName: "start.fill")
+                            Text("Completed")
                         }
-                    Text("The Last Tab")
+                    Text("Profile Screen")
                         .tabItem {
-                            Image(systemName: "3.square.fill")
-                            Text("Third")
+                            Image(systemName: "person.fill")
+                            Text("Profile")
                         }
                 }
                 .font(.headline)

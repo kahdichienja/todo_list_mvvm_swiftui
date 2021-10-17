@@ -38,11 +38,6 @@ final class TypicodeApiService: TypicodeApiServiceProtocol{
                 completion(.failure(.inValidData))
             }
             
-//            let todos = try! JSONDecoder().decode([TypicodeTodo].self, from: data!)
-//
-//            DispatchQueue.main.async {
-//                completion(todos)
-//            }
         }
         
         task.resume()
