@@ -10,7 +10,10 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-            TodoListView()
+            VStack(spacing: 30){
+                TodoListView()
+            }
+            
         }
     }
 }

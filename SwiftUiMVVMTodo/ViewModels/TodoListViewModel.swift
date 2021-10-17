@@ -39,4 +39,10 @@ final class TodoListViewModel: ObservableObject{
             
         ]
     }
+    
+    func newTodo(new: TodoListItem){
+        
+        self.items.append(new)
+        
+    }
 }

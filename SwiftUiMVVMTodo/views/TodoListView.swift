@@ -8,26 +8,41 @@
 import SwiftUI
 
 struct TodoListView: View {
-    @ObservedObject var viewModel: TodoListViewModel = TodoListViewModel()
+    @ObservedObject var viewModel: TypiCodeViewModel = TypiCodeViewModel()
+    @State private var isShowAddTodo = false
     var body: some View {
-        VStack{
-            List(viewModel.items){
-                item in
-                Text(item.action)
+        NavigationView{
+             VStack{
+                NavigationLink(destination: AddTodoFormView(), isActive: $isShowAddTodo){
+                    
+                }
+                List(viewModel.items){
+                    item in
+                    NavigationLink(destination: TypiCodeTodoItemView(userId: item.userId, item: item)){
+                        HStack{
+                            Text(item.title)
+                            Spacer()
+                            Image(systemName: item.completed ? "checkmark.square" : "square")
+                        }.padding()
+                    }
+                    
+                }
+                
             }
+//            .onAppear{
+//                self.viewModel.onAppear()
+//            }
+            .navigationTitle("Todo List")
+            .navigationBarItems(trailing: Button(
+                action: {
+                    self.isShowAddTodo = true
+                    //self.viewModel.addTodos()
+                }, label: {
+                    Text("Add")
+                }
+            
+            ))
         }
-        .onAppear{
-            self.viewModel.onAppear()
-        }
-        .navigationTitle("Todo List \(viewModel.username)")
-        .navigationBarItems(trailing: Button(
-            action: {
-                self.viewModel.addTodos()
-            }, label: {
-                Text("Refresh")
-            }
-        
-        ))
     }
 }
 
