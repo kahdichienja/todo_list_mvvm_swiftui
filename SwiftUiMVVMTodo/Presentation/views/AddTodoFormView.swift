@@ -15,7 +15,7 @@ struct AddTodoFormView: View {
     @State private var shouldSendNews = false
     @State private var numberOfLikes = 0
     var body: some View {
-        NavigationView{
+        VStack{
             Form{
                 Section(header: Text("Personal Info")){
                     TextField("Username", text: $username)
@@ -31,19 +31,23 @@ struct AddTodoFormView: View {
                     Link("Terms Of Use", destination: URL(string: "https://apple.com")!)
                 }
             }
-            .navigationTitle("Account Update")
-            .toolbar{
-                ToolbarItemGroup(placement: .navigationBarTrailing){
-                    Button{
-                        hideKeyboard()
-                    }
-                    label: {
-                        Image(systemName: "keyboard.chevron.compact.down")
-                    }
-                    Button("Save", action: saveUser)
+            
+        }
+        .navigationTitle("Account Update")
+        .navigationBarItems(
+            leading: Button("Save", action: saveUser),
+            trailing: Button(
+                action: {
+                    hideKeyboard()
+                    
+                }, label: {
+                    Image(systemName: "keyboard.chevron.compact.down")
                 }
-            }
-        }.accentColor(.blue)
+            
+            )
+            
+        )
+        
     }
     func saveUser(){
         print("Saved")

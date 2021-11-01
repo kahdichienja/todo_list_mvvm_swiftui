@@ -18,12 +18,7 @@ struct TypiCodeTodoItemView: View {
         latitudinalMeters: 30000,
         longitudinalMeters: 30000
     )
-
-    var userId: Int
-    var item: TypicodeTodo
-    
     var body: some View {
-        NavigationView{
             Form{
                 Section(header: Text("\(viewModel.typicodeUser?.username ?? "") Info")){
                     VStack(spacing: 5){
@@ -78,23 +73,16 @@ struct TypiCodeTodoItemView: View {
                 }
                 Section(header: Text("Todo")){
                     VStack(alignment: .leading, spacing: 5){
-                        Text(item.title)
+                        Text(viewModel.todoItem?.title ?? "")
                     }
                 }
-               
-                  
-               
-                
                 Map(
                     coordinateRegion:$region
                 )
-                .frame(height: 300)
+                .frame(height: 300).ignoresSafeArea()
                 
                 
             }
-        }.onAppear{
-            viewModel.getUserById(userId: userId)
-        }
     }
 }
 

@@ -24,12 +24,15 @@ final class TodoListViewModel: ObservableObject{
     }
     
     func onAppear() {
-        repository.fetchUser{
-            todo in
-            self.username = todo.action
-           
-            self.items  = [TodoListItem(action: "Learning Clean Architecture"),]
+        DispatchQueue.main.async {
+            self.repository.fetchUser{
+                todo in
+                self.username = todo.action
+               
+                self.items  = [TodoListItem(action: "Learning Clean Architecture"),]
+            }
         }
+       
     }
     
     func addTodos(){

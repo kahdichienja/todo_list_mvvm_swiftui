@@ -10,39 +10,45 @@ import SwiftUI
 struct TodoListView: View {
     @ObservedObject var viewModel: TypiCodeViewModel = TypiCodeViewModel()
     @State private var isShowAddTodo = false
+    @State private var searchText: String  = ""
     var body: some View {
-        NavigationView{
-             VStack{
-                NavigationLink(destination: AddTodoFormView(), isActive: $isShowAddTodo){
+        VStack{
+            if(viewModel.isLoadingItems){
+                ProgressView()
+                Text("Loading...")
+            }else{
+                NavigationLink(destination: TypiCodeTodoItemView(), isActive: $isShowAddTodo){
                     
                 }
-                List(viewModel.items){
-                    item in
-                    NavigationLink(destination: TypiCodeTodoItemView(userId: item.userId, item: item)){
-                        HStack{
-                            Text(item.title)
-                            Spacer()
-                            Image(systemName: item.completed ? "checkmark.square" : "square")
-                        }.padding()
+                List(viewModel.filterTodos(isComplete: true)){item in
+                    HStack{
+                        TodoRowView(
+                            title: item.title,
+                            completed: item.completed
+                        ).onTapGesture {
+                            viewModel.getUserById(userId: item.userId)
+                            
+                            viewModel.todoItem = item
+                            
+                            self.isShowAddTodo = true
+                            print(item)
+                        }
                     }
-                    
                 }
-                
             }
-//            .onAppear{
-//                self.viewModel.onAppear()
-//            }
-            .navigationTitle("Todo List")
-            .navigationBarItems(trailing: Button(
+            
+        }.navigationTitle("Todo List")
+        .navigationBarItems(
+            trailing: Button(
                 action: {
                     self.isShowAddTodo = true
-                    //self.viewModel.addTodos()
                 }, label: {
                     Text("Add")
                 }
-            
-            ))
-        }
+                
+            )
+        )
+        
     }
 }
 

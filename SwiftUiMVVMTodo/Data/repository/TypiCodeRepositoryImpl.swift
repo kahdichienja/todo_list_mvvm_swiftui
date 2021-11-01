@@ -33,15 +33,36 @@ final class TypiCodeRepository: TypicodeRepositoryProtocol{
             result in
             switch result{
             case .success(let todos):
-                completion(todos)
+                DispatchQueue.main.async {completion(todos)}
             case .failure(let error):
                 print(error)
             }
         }
     }
     
+    
     func getTypiCodeUserById(userId: Int,completion: @escaping (TypiCodeUser) -> ()){
-        apiService.getTypiCodeUser(userId: userId, completion: completion)
+        
+        guard let url = URL(string: "\(StringUtil.BASE_URL)/users/\(userId)") else {return}
+
+    
+        apiService.getData(TypiCodeUser.self, url: url){
+            res in
+            
+            switch res{
+            
+            case .success(let user):
+                DispatchQueue.main.async {completion(user)}
+            case .failure(let err):
+                print(err)
+            }
+        }
+        
+        //apiService.getTypiCodeUser(userId: userId, completion: completion)
+    }
+    
+    func err()-> String {
+       return "ok"
     }
     
 }

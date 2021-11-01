@@ -29,6 +29,13 @@
 		F8B8C30C2719D61A000D7A5F /* TodoListApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C30B2719D61A000D7A5F /* TodoListApiService.swift */; };
 		F8B8C3112719D6AC000D7A5F /* TodoListRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C3102719D6AC000D7A5F /* TodoListRepositoryImpl.swift */; };
 		F8B8C3162719D9A6000D7A5F /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8C3152719D9A6000D7A5F /* TodoListView.swift */; };
+		F8D2C4D2271E8FAD00A84BE1 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2C4D1271E8FAD00A84BE1 /* SideMenu.swift */; };
+		F8D2C4D7271E91DA00A84BE1 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2C4D6271E91DA00A84BE1 /* SideMenuView.swift */; };
+		F8D2C4DC271E91F200A84BE1 /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2C4DB271E91F200A84BE1 /* SideMenuHeaderView.swift */; };
+		F8D2C4E1271E922300A84BE1 /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2C4E0271E922300A84BE1 /* MenuItemsView.swift */; };
+		F8D2C4E6271E925100A84BE1 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D2C4E5271E925100A84BE1 /* SideMenuViewModel.swift */; };
+		F8E04E092720084200696937 /* TodoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E04E082720084200696937 /* TodoRowView.swift */; };
+		F8E04E1127200A8100696937 /* CompletedTodos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E04E1027200A8100696937 /* CompletedTodos.swift */; };
 		F8E183BD271C2C6000D09217 /* TodoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E183BC271C2C6000D09217 /* TodoListRepository.swift */; };
 		F8E183C5271C2CAC00D09217 /* TypiCodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E183C4271C2CAC00D09217 /* TypiCodeRepository.swift */; };
 		F8F5C668271C47A400B2469E /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F5C667271C47A400B2469E /* StringUtils.swift */; };
@@ -80,6 +87,13 @@
 		F8B8C30B2719D61A000D7A5F /* TodoListApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApiService.swift; sourceTree = "<group>"; };
 		F8B8C3102719D6AC000D7A5F /* TodoListRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRepositoryImpl.swift; sourceTree = "<group>"; };
 		F8B8C3152719D9A6000D7A5F /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		F8D2C4D1271E8FAD00A84BE1 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		F8D2C4D6271E91DA00A84BE1 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		F8D2C4DB271E91F200A84BE1 /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
+		F8D2C4E0271E922300A84BE1 /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
+		F8D2C4E5271E925100A84BE1 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		F8E04E082720084200696937 /* TodoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRowView.swift; sourceTree = "<group>"; };
+		F8E04E1027200A8100696937 /* CompletedTodos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTodos.swift; sourceTree = "<group>"; };
 		F8E183BC271C2C6000D09217 /* TodoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListRepository.swift; sourceTree = "<group>"; };
 		F8E183C4271C2CAC00D09217 /* TypiCodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypiCodeRepository.swift; sourceTree = "<group>"; };
 		F8F5C667271C47A400B2469E /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
@@ -212,7 +226,13 @@
 			isa = PBXGroup;
 			children = (
 				F8B8C3152719D9A6000D7A5F /* TodoListView.swift */,
+				F8D2C4D1271E8FAD00A84BE1 /* SideMenu.swift */,
+				F8D2C4D6271E91DA00A84BE1 /* SideMenuView.swift */,
+				F8E04E072720082A00696937 /* Component */,
+				F8D2C4DB271E91F200A84BE1 /* SideMenuHeaderView.swift */,
+				F8D2C4E0271E922300A84BE1 /* MenuItemsView.swift */,
 				F8140419271BFD8A0072BAD2 /* TypiCodeTodoItemView.swift */,
+				F8E04E1027200A8100696937 /* CompletedTodos.swift */,
 				F85BA075271AE92D00EF9FCD /* AddTodoFormView.swift */,
 			);
 			path = views;
@@ -222,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				F8B8C3002719D53A000D7A5F /* TodoListViewModel.swift */,
+				F8D2C4E5271E925100A84BE1 /* SideMenuViewModel.swift */,
 				F8140414271BF1710072BAD2 /* TypiCodeViewModel.swift */,
 			);
 			path = ViewModels;
@@ -233,6 +254,14 @@
 				F8E183B8271C2A5900D09217 /* remote */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		F8E04E072720082A00696937 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				F8E04E082720084200696937 /* TodoRowView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		F8E183B4271C29F600D09217 /* Common */ = {
@@ -432,6 +461,8 @@
 				F8B8C30C2719D61A000D7A5F /* TodoListApiService.swift in Sources */,
 				F840C5FC271C317300AB9A08 /* TypicodeApiServiceProtocol.swift in Sources */,
 				F8140406271BEB7C0072BAD2 /* TypiCodeModel.swift in Sources */,
+				F8D2C4D2271E8FAD00A84BE1 /* SideMenu.swift in Sources */,
+				F8D2C4D7271E91DA00A84BE1 /* SideMenuView.swift in Sources */,
 				F840C5F7271C315800AB9A08 /* TodoListApiServiceProtocal.swift in Sources */,
 				F8B8C3112719D6AC000D7A5F /* TodoListRepositoryImpl.swift in Sources */,
 				F85BA076271AE92D00EF9FCD /* AddTodoFormView.swift in Sources */,
@@ -443,12 +474,17 @@
 				F8E183C5271C2CAC00D09217 /* TypiCodeRepository.swift in Sources */,
 				F8140401271BE84C0072BAD2 /* NetworkResource.swift in Sources */,
 				F814041A271BFD8B0072BAD2 /* TypiCodeTodoItemView.swift in Sources */,
+				F8D2C4E1271E922300A84BE1 /* MenuItemsView.swift in Sources */,
 				F8B8C2CA2719C870000D7A5F /* AppDelegate.swift in Sources */,
 				F8B8C2CC2719C870000D7A5F /* SceneDelegate.swift in Sources */,
 				F8F5C668271C47A400B2469E /* StringUtils.swift in Sources */,
 				F8140415271BF1710072BAD2 /* TypiCodeViewModel.swift in Sources */,
+				F8E04E092720084200696937 /* TodoRowView.swift in Sources */,
 				F814040B271BEBB20072BAD2 /* TypiCodeService.swift in Sources */,
 				F8B8C2CE2719C870000D7A5F /* ContentView.swift in Sources */,
+				F8D2C4E6271E925100A84BE1 /* SideMenuViewModel.swift in Sources */,
+				F8E04E1127200A8100696937 /* CompletedTodos.swift in Sources */,
+				F8D2C4DC271E91F200A84BE1 /* SideMenuHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
